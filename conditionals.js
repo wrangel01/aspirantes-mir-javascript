@@ -7,7 +7,7 @@ function calcularColor(num) {
     } else if (num === 3) {
       color = "rojo";
     } else {
-      color: "verde";
+      color ="verde";
     }
     return "El color es " + color;
   }
