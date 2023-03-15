@@ -1,14 +1,13 @@
-function texto(a, b,) {
-    var s = Array.prototype.join.call(arguments);
-    console.log(s);
+function join(arr) {
+  let resultado = "";
+  if (arr.length === 0) {
+      return resultado;
+  } else {
+      for (let i = 0; i < arr.length; i++) {
+          resultado = resultado + arr[i] + " ";
+      }
   }
-  texto("hola", " Mundo");
+  return resultado;
+}
 
-
-const arr = ["hola", " Mundo"]
-const cadena = arr.toString();
-console.log(cadena);
-
-let colores = ['verde', ' amarillo', ' azul'];
-console.log(colores.toString());
-
+console.log(join(["Hola", "Mundo"]))
